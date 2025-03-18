@@ -18,15 +18,22 @@ public class StoreManager {
         this.name = name;
     }
 
+
     public void createStore(String store_name, StockManager stockManager) {
         store = new Store(store_name, this, stockManager);
+
     }
 
     public Store getStore() {
         return store;
     }
 
+    public void moveStore(String newAddress){
+        store.changeAddress(newAddress);
+    }
+
     public void removeStore() {
+        store.closeStore();
         store = null;
     }
 }
