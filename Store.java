@@ -43,4 +43,6 @@ public class Store {
 		item.changePrice(newPrice);
 		item.changeDetails(newDetails);
 	}
+  
+  
 }
