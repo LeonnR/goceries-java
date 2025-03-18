@@ -14,6 +14,9 @@ public class Store {
 		this.stockManager = sm;
 	}
 
+    public void setManager(StoreManager newSM){
+        this.manager = newSM;
+    }
 	public void changeAddress(String newAddress){
 		address = newAddress;
 	}
