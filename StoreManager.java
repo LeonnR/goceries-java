@@ -36,4 +36,20 @@ public class StoreManager {
         store.closeStore();
         store = null;
     }
+
+    public void listInventory(){
+        store.listInventory();
+    }
+
+    public void updatedetails(Inventory inv, String newDetails){
+        store.updateProductDetail(inv, newDetails);
+    }
+
+    public void addProduct(Inventory inv){
+        store.addInventoryItem(inv);
+    }
+
+    public void deleteProduct(Inventory item){
+        store.removeInventoryItem(item);
+    }
 }

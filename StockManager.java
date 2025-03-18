@@ -31,6 +31,7 @@ public class StockManager {
         store.removeInventoryItem(item);
     }
 
+
     public void updateInventoryItem(Inventory item, int newStock, int newPrice, String newDetails) {
         store.updateInventoryItem(item, newStock, newPrice, newDetails);
     }
