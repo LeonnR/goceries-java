@@ -13,5 +13,10 @@ public class Store {
 		this.stockManager = sm;
 	}
 
+    // USE VIM
+
+    public void setManager(StoreManager newSM){
+        this.manager = newSM;
+    }
 
 }
