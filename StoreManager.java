@@ -18,8 +18,10 @@ public class StoreManager {
         this.name = name;
     }
 
-    public void createStore(String store_name, StoreManager manager, StockManager stockManager) {
-        store = new Store(store_name, manager, stockManager);
+
+    public void createStore(String store_name, StockManager stockManager) {
+        store = new Store(store_name, this, stockManager);
+
     }
 
     public Store getStore() {

@@ -35,3 +35,4 @@ public class StockManager {
         store.updateInventoryItem(item, newStock, newPrice, newDetails);
     }
 }
+

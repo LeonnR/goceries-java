@@ -14,9 +14,9 @@ public class Store {
 		this.stockManager = sm;
 	}
 
-    public void setManager(StoreManager newSM){
+  public void setManager(StoreManager newSM){
         this.manager = newSM;
-    }
+  }
 	public void changeAddress(String newAddress){
 		address = newAddress;
 	}
@@ -36,6 +36,7 @@ public class Store {
 	public void removeInventoryItem(Inventory item){
 		inventory.remove(item);
 	}
+
 
 	public void updateInventoryItem(Inventory item, int newStock, int newPrice, String newDetails){
 		item.changeStock(newStock);
