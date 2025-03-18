@@ -10,6 +10,18 @@ public class Inventory {
         this.details = details;
         this.price = price;
     }
+    
+    public String getName(){
+        return name;
+    }
+
+    public int getPrice(){
+        return price;
+    }
+
+    public String getDetails(){
+        return details;
+    }
 
     public void changePrice(int newPrice){
         this.price = newPrice;

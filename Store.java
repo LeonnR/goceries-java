@@ -43,4 +43,18 @@ public class Store {
 		item.changePrice(newPrice);
 		item.changeDetails(newDetails);
 	}
+
+  public void listInventory(){
+    for(Inventory i : inventory){
+      System.out.println(i.getName() + "Price: " + i.getPrice() + "Details: " + i.getDetails());
+    }
+  }
+
+  public void updateProductDetail(Inventory inv, String newDetails){
+    for(Inventory i : inventory){
+      if(i.equals(inv)){
+        i.changeDetails(newDetails);
+      }
+    }
+  }
 }

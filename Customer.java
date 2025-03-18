@@ -5,7 +5,9 @@ public class Customer extends User  {
     private String password;
     
     public Customer(String name, String phoneNumber, String ID, String password){
-        super(name, phoneNumber, ID, password);
+        super(ID, password);
+        this.name = name;
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
