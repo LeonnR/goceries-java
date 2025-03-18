@@ -15,15 +15,20 @@ public class StoreManager {
         this.name = name;
     }
 
-    public void createStore(String store_name, String store_address, String contactNumber) {
-        store = new Store(store_name, store_address, contactNumber, this);
+    public void createStore(String store_name, StoreManager manager, StockManager stockManager) {
+        store = new Store(store_name, manager, stockManager);
     }
 
     public Store getStore() {
         return store;
     }
 
+    public void moveStore(String newAddress){
+        store.changeAddress(newAddress);
+    }
+
     public void removeStore() {
+        store.closeStore();
         store = null;
     }
 }
