@@ -1,0 +1,3 @@
+interface ReadOnly {
+    void read();
+}

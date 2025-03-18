@@ -20,12 +20,5 @@ public abstract class User{
         System.out.println("Logout successful");
     }
 
-    public abstract void signUp();
     public abstract void goToHomePage();
-    public abstract void editUserProfile();
-    public abstract void confirmOrderReceived();
-    public abstract void placeOrder();
-    public abstract void viewOrderHistory();
-    public abstract void payForOrder();
-    public abstract void cancelOrder();
 }
