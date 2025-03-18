@@ -15,7 +15,7 @@ public class StoreManager {
         this.name = name;
     }
 
-    public void createStore(String store_name, String store_address, String contactNumber) {
+    public void createStore(String store_name, String store_address, String contactNumber, StoreManager storeManager) {
         store = new Store(store_name, store_address, contactNumber, this);
     }
 
