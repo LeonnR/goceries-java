@@ -1,10 +1,16 @@
-public class StockManager {
+public class StockManager extends User{
     private String name;
     private Store store;
 
-    public StockManager(String name) {
+    public StockManager(String name, String ID, String password) {
+        super(ID, password);
         this.name = name;
         this.store = null;
+    }
+
+    @Override
+    public void goToHomePage(){
+        System.out.println("Stock Manager goes to home page");
     }
 
     public String getName() {

@@ -1,12 +1,18 @@
-public class StoreManager {
+public class StoreManager extends User{
     private String name;
     private String managerID;
     private Store store;
 
-    public StoreManager(String name, String managerID, Store store){
+    public StoreManager(String name, String managerID, Store store, String ID, String password){
+        super(ID, password);
         this.name = name;
         this.managerID = managerID;
         this.store = store;
+    }
+
+    @Override
+    public void goToHomePage(){
+        System.out.println("Store Manager goes to home page");
     }
 
     public void changeStore(Store store){
