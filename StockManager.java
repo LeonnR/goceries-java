@@ -1,9 +1,11 @@
-public class StockManager {
+public class StockManager extends User{
     private String name;
     private Store store;
 
-    public StockManager(String name) {
+    public StockManager(String name, String phoneNumber, String ID, String password) {
+        super(ID, password);
         this.name = name;
+        this.phoneNumber = phoneNumber;
         this.store = null;
     }
 
@@ -33,6 +35,10 @@ public class StockManager {
 
     public void updateInventoryItem(Inventory item, int newStock, int newPrice, String newDetails) {
         store.updateInventoryItem(item, newStock, newPrice, newDetails);
+    }
+
+    public void goToHomePage(){
+        System.out.println("Stock Manager goes to home page");
     }
 }
 

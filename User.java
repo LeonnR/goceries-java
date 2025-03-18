@@ -2,7 +2,7 @@ public abstract class User{
     private String ID;
     private String password;
 
-    public User(String name, String phoneNumber, String ID, String password){
+    public User(String ID, String password){
         this.ID = ID;
         this.password = password;
     }

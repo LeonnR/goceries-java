@@ -1,9 +1,10 @@
-public class StoreManager {
+public class StoreManager extends User{
     private String name;
     private String managerID;
     private Store store;
 
-    public StoreManager(String name, String managerID, Store store){
+    public StoreManager(String name, String managerID, Store store, String phoneNumber, String password) {
+        super(managerID, password);
         this.name = name;
         this.managerID = managerID;
         this.store = store;
@@ -35,5 +36,9 @@ public class StoreManager {
     public void removeStore() {
         store.closeStore();
         store = null;
+    }
+
+    public void goToHomePage(){
+        System.out.println("Store Manager goes to home page");
     }
 }
